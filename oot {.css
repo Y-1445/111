@@ -1,0 +1,123 @@
+oot {
+    --primary-color: #222;
+    --secondary-color: #09f;
+    --bg-color: #f7f9fb;
+    --text-color: #222;
+    --subtext-color: #666;
+    --footer-color: #eee;
+    --avatar-size: 100px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 48px 0 24px 0;
+    background: #fff;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.avatar img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0 2px 12px #09f2;
+}
+
+h1 {
+    margin: 18px 0 6px 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: var(--subtext-color);
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+main {
+    padding: 32px 0;
+    background: var(--bg-color);
+    min-height: 320px;
+}
+
+section {
+    margin-bottom: 36px;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 8px;
+    margin-bottom: 12px;
+}
+
+.about p {
+    line-height: 1.7;
+    font-size: 1.06rem;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contact li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.contact a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 18px 0;
+    background: var(--footer-color);
+    text-align: center;
+    color: var(--subtext-color);
+    font-size: 0.97rem;
+    border-top: 1px solid #eee;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+    header {
+        padding: 36px 0 16px 0;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.08rem;
+    }
+    .avatar img {
+        width: 70px;
+        height: 70px;
+    }
+    main {
+        padding: 18px 0;
+    }
+}
